@@ -1,0 +1,7 @@
+Робота з текстовими файлами та потоками:
+8. awk -F: '$3 > 54 && $7 ~ /bash$/ {count++} END {print count}' /etc/passwd
+9. find ~ -type f -printf "%s %p\n" 2>/dev/null | sort -n | head -10
+10. journalctl --since "15 min ago"
+
+Робота з процесами:
+4. ps -eo pid,cmd | grep '/bin' | awk '{print $1}'
